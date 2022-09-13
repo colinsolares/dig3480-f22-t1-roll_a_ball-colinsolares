@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count:" + count.ToString();
-        if (count >= 13)
+        if (count >= 14)
         {
             winTextObject.SetActive(true);
         }
@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour
         // Teleport to new level
         if (count == 13)
         {
-            transform.position = new Vector3(50f, 0.5f, 50f);
+            transform.position = new Vector3(50f, 0.5f, 0f);
         }
 
     }
