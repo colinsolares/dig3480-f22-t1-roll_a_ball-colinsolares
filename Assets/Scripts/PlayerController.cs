@@ -63,11 +63,19 @@ public class PlayerController : MonoBehaviour
 
             SetCountText();
         }
+
+        // When player runs into an enemy
         else if (other.gameObject.CompareTag("Enemy"))
         {
             other.gameObject.SetActive(false);
             count = count - 1;
             SetCountText();
+        }
+
+        // Teleport to new level
+        if (count == 13)
+        {
+            transform.position = new Vector3(50f, 0.5f, 50f);
         }
 
     }
