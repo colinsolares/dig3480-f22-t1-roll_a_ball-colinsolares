@@ -19,7 +19,11 @@ private float journeyLength;
     // Start is called before the first frame update
     void Start()
     {
-        
+        // Keep a note of the time the movement started.
+        startTime = Time.time;
+
+        // Calculate the journey length.
+        journeyLength = Vector3.Distance(startMarker.position, endMarker.position);
     }
 
     // Update is called once per frame
