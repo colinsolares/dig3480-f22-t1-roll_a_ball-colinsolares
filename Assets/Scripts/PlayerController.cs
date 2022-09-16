@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
 
         // Amount of lives off the rip
         rb=GetComponent<Rigidbody>();
-        count = 0;
+        lives = 3;
           
         //win and lose text false and should not tirgger
         SetCountText();
