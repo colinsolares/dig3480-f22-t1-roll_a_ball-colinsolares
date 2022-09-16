@@ -8,6 +8,7 @@ public class CameraController : MonoBehaviour
     private Vector3 offset;
 
     // Start is called before the first frame update
+    //yo yoy yoyoy yoyoy o
     void Start()
     {
         offset = transform.position - player.transform.position;
