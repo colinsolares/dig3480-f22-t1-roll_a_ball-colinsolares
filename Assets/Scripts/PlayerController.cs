@@ -26,9 +26,9 @@ public class PlayerController : MonoBehaviour
         count = 0;
 
         // Amount of lives off the rip
-        rb=GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
         lives = 3;
-          
+
         //win and lose text false and should not tirgger
         SetCountText();
         winTextObject.SetActive(false);
@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             lives = lives - 1;
-            
+
             SetCountText();
         }
 
