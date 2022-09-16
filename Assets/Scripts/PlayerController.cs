@@ -75,6 +75,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // when a player runs into a pick up
         if (other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
