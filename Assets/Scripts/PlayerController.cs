@@ -41,9 +41,17 @@ public class PlayerController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count:" + count.ToString();
-        if (count >= 14)
+        if (count >= 21)
         {
             winTextObject.SetActive(true);
+        }
+
+        // if player runs out of lives player is blown up and lose text triggers
+        livesText.text = "lives " + lives.ToString();
+        if (lives == 0)
+        {
+            LoseTextObject.SetActive(true);
+            Destroy(gameObject);
         }
     }
 
