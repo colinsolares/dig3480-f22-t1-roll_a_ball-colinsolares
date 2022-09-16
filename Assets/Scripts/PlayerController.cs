@@ -8,10 +8,13 @@ public class PlayerController : MonoBehaviour
 
     public float speed = 0;
     public TextMeshProUGUI countText;
+    public TextMeshProUGUI livesText;
+    public GameObject LoseTextObject;
     public GameObject winTextObject;
     // Change win text message!
     private Rigidbody rb;
     private int count;
+    private int lives;
     private float movementX;
     private float movementY;
 
@@ -21,6 +24,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         count = 0;
+        
 
         SetCountText();
         winTextObject.SetActive(false);
