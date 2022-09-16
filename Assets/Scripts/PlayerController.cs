@@ -24,10 +24,17 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         count = 0;
-        
 
+        // Amount of lives off the rip
+        rb=GetComponent<Rigidbody>();
+        count = 0;
+          
+        //win and lose text false and should not tirgger
         SetCountText();
         winTextObject.SetActive(false);
+
+        SetCountText();
+        LoseTextObject.SetActive(false);
 
     }
 
